@@ -1,0 +1,134 @@
+
+
+.hide-mobile{
+    display: none;
+}
+
+body
+{
+    background-color: rgb(245, 243, 243);
+    margin: 0;
+    font-family: 'Inter';
+}
+
+.wrap{
+    margin: 2em;
+}
+
+header{
+     display: flex;
+     justify-content: space-between;
+}
+
+nav ul{
+   
+    position: fixed;
+    z-index: 1200;
+    top:0;
+    right: 0;
+    height: 50vh;
+    margin: 0;
+    list-style: none;
+    width: 20%;
+    text-align: right;
+    padding: 2cm;
+    transform:translateX(0%);
+    transition: transform 0.5s ease-in-out;
+
+
+
+    li{
+        margin: 0cm 0;
+
+        &:nth-of-type(1)
+        {
+           
+            margin-bottom: 0em;
+        }
+
+        a{
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            font: size 1.5rem;;
+        
+        
+        &:hover{
+           
+            color:orangered;
+        }
+    }
+    }
+}
+.open{
+    transform: translateX(0);
+}
+
+h1 , p {
+      text-align: center;
+}
+
+h1 {
+    margin-top: 0em;
+    
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+   
+}
+
+a.primary-cta {
+    background: yellow;
+    padding: 1em;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: black;
+    border-radius: .5em;
+}
+
+.cat {
+    position: relative;
+    height: 2000px;
+    width: 500px;
+    overflow: hidden;
+
+    img {
+        width: 80%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .inner-circle, .outer-circle {
+        position: absolute;
+        border-radius: 50%;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%, -50%);
+    }
+
+    
+
+}
+
+nav ul {
+    position: unset;
+    background:none;
+    display: flex;
+    gap: 2em;
+    height: auto;
+    width: auto;
+    transform: translateX(0%);
+
+    li a {
+        font-size: 1.2rem;
+    }
+}
+
